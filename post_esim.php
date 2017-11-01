@@ -1,8 +1,8 @@
 <?php include "menu.php"; ?>
 
-<h1>Get esimerkki</h1>
+<h1>POST esimerkki</h1>
 
-<form action="get_esim.php" method="get">
+<form action="post_esim.php" method="post">
   <table border ="0">
   <tr>
     <td><label for="en">Etunimi</label></td>
@@ -16,9 +16,9 @@
 </form>
 
 <?php
-    if(isset($_GET['btnSend'])){
-      $etu=$_GET['en'];
-      $suk=$_GET['sn'];
+    if(isset($_POST['btnSend'])){
+      $etu=$_POST['en'];
+      $suk=$_POST['sn'];
       echo 'Hei '.$etu.' '.$suk;
     }
 
