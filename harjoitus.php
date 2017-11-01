@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<?php include "menu.php"; ?>
     <h1>moro</h1>
     <p>Seuraava taulukko on luotu php:llä</p>
     <?php
@@ -31,5 +25,5 @@
       }
       ?>
     </table>
-  </body>
-</html>
+
+<?php include "footer.php"; ?>
